@@ -13,6 +13,7 @@ def adicionar_arquivo(compras, arq_compras):
     with open(arq_compras, "w")as arquivo:
         for compra in compras:
             arquivo.write(compra)
+    return arq_compras
 
 def atualizar(compras, arq_compras):
     produto_at=input("digite a compra que quer atualizar o preço:")
